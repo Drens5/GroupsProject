@@ -4,16 +4,16 @@ module Cyclic.C1 where
 
 import Group
 
-data C1 = Zero
+data C1 = ZeroC1
     deriving (Eq, Show)
 
 instance Semigroup C1
   where
-    _ <> _ = Zero
+    _ <> _ = ZeroC1
 
 instance Monoid C1
   where
-    mempty = Zero
+    mempty = ZeroC1
 
 instance Group C1
   where

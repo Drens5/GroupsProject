@@ -4,19 +4,19 @@ module Cyclic.C2 where
 
 import Group
 
-data C2 = Zero | One
+data C2 = ZeroC2 | OneC2
     deriving (Eq, Show)
 
 instance Semigroup C2
   where
-    Zero <> a = a
-    a <> Zero = a
-    One <> One = Zero
+    ZeroC2 <> a = a
+    a <> ZeroC2 = a
+    OneC2 <> OneC2 = ZeroC2
 
 
 instance Monoid C2
   where
-    mempty = Zero
+    mempty = ZeroC2
 
 instance Group C2
   where
