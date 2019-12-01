@@ -20,4 +20,5 @@ instance Monoid C2
 
 instance Group C2
   where
+    elements = [ZeroC2, OneC2]
     invert = id

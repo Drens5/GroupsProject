@@ -32,4 +32,5 @@ instance Monoid C5
 
 instance Group C5
   where
+    elements = [ZeroC5, OneC5, TwoC5, ThreeC5, FourC5]
     invert a = fromZmod5Z $ project 5 $ -(toZmod5Z a)

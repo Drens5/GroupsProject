@@ -17,4 +17,5 @@ instance Monoid C1
 
 instance Group C1
   where
+    elements = [ZeroC1]
     invert _ = mempty
